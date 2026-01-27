@@ -1,0 +1,259 @@
+/* navbar css */
+#navbar {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    height: 60px;
+    line-height: 40px;
+    margin: 10px auto;
+}
+
+#navbar img {
+    float: left;
+    height: 40px;
+    margin: 10px 30px;
+}
+
+#navbar ul {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 40px;
+    display: block;
+    font-size: 18px;
+}
+
+#navbar ul li a.active {
+    color: #fe6147;
+    font-weight: bold;
+}
+
+#navbar span {
+    float: right;
+    margin-right: 30px;
+    margin-top: 8px;
+}
+
+#navbar input {
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+
+
+/* banner css */
+#banner {
+    margin: 40px 15px;
+    padding: 30px 50px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+#banner h1 {
+    font-size: 3.5rem;
+}
+
+.banner-text {
+    float: left;
+    width: 50%;
+}
+
+.banner-image {
+    float: right;
+    width: 40%;
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+.banner-text button {
+    background-color: #fe6147;
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 100px;
+}
+
+
+.banner-text button:hover {
+    background-color: #e5533d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.banner-text button:focus {
+    color: #fe6147;
+    background-color: #ffff;
+    border: 1px solid black;
+}
+
+/* cards section css */
+#cards {
+    overflow: hidden;
+    border: 1px solid black;
+    margin: 40px 15px;
+    padding: 30px 50px;
+}
+
+.card {
+    float: left;
+    width: 30%;
+    margin: 1.66%;
+    box-sizing: border-box;
+}
+
+.card h3 {
+    margin: 30px 0;
+    font-size: 25px;
+}
+
+.card p {
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #fe6147;
+    font-size: 15px;
+}
+
+
+.card a {
+    position: relative;
+}
+
+.card a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #fe6147;
+    transition: width 0.3s ease;
+}
+
+.card a:hover::after {
+    width: 100%;
+}
+
+.img-box {
+    width: 90%;
+    height: 200px;
+    background-color: #eee;
+    overflow: hidden;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* footer css */
+#footer {
+    font-size: 13px;
+    border: 1px solid black;
+    margin: 40px 15px;
+    padding: 30px 50px;
+}
+
+.footer-top {
+    width: 90%;
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+}
+
+.footer-logo,
+.footer-links,
+.footer-social {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.footer-logo {
+    text-align: left;
+}
+
+.footer-logo img {
+    height: 40px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #fe6147;
+}
+
+.footer-social {
+    text-align: right;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.footer-social img {
+    width: 22px;
+    height: 22px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.footer-bottom {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #fe6147;
+    font-size: 18px;
+    margin: 0 15px;
+}
